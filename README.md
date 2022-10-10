@@ -15,6 +15,10 @@ https://howhttps.works/zh/
 https://github.com/xgqfrms/How-HTTPS-Works-Chinese/
 ## refs
 
+> YAML
+
+[https://howhttps.works/translate/](https://howhttps.works/translate/#yaml-template)
+
 ![](https://user-images.githubusercontent.com/7291672/194790240-f538ccdb-f0f6-408e-a45e-d653cdeb43af.png)
 
 [SSL vs TLS vs SSH & HTTPS All In One](https://www.cnblogs.com/xgqfrms/p/16774549.html)

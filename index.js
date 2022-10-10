@@ -32,7 +32,7 @@ const needle = require('needle');
 const cheerio = require('cheerio');
 const json2md = require('json2md');
 
-
+const log = console.log;
 
 // 自动抓取网页，生成本地版的 English 对照参考 Markdown 文档
 const urls = [
@@ -44,14 +44,15 @@ const urls = [
   'https://howhttps.works/https-ssl-tls-differences/',
   'https://howhttps.works/certificate-authorities/',
   'https://howhttps.works/quiz/',
+  // quiz & vue 动态组件渲染抓取 bug
 ];
 
 
 // utils
 function checkTextElement(element) {
   const tagNames = ['h1', 'p', 'span', 'text'];
-  // return tagNames.includes(element);
-  return tagNames.some(tagName => element === tagName);
+  return tagNames.includes(element);
+  // return tagNames.some(tagName => element === tagName);
   // return tagNames.some((tagName) => {
   //   return element === tagName;
   // });
@@ -72,7 +73,7 @@ function write(res, filePath) {
   fs.writeFileSync(filePath, json2md(res));
 };
 
-function parser(url ,index) {
+function parser(url, index) {
   const results = [];
   needle.get(url, (err, res) => {
     // error handler first
@@ -81,9 +82,13 @@ function parser(url ,index) {
     }
     // DOM
     const $ = cheerio.load(res.body);
+    // console.log(`main * =`, $('main *'));
     $('main *').each((i, elem) => {
+      // console.log(`elem =`, elem);
+      // console.log(`🔖elem.name =`, elem.name);
       // check
       if(checkTextElement(elem.name)) {
+        console.log(`🔖elem.name =`, elem.name);
         if (elem.name === 'span'|| elem.name === 'text') {
           elem.name = 'p';
         }
@@ -97,12 +102,19 @@ function parser(url ,index) {
     });
     const fileName = url.match(/\/([^\/]+)[\/]?$/)[1];
     // console.log(`fileName =`, fileName);
-    console.log(`✅ results =`, results);
-    // write(results,`./${index}-${fileName}-en.md`);
-    write(results,`./docs/en/${index}-${fileName}.md`);
+    // console.log(`✅ results =`, results);
+    // write(results,`./0${index}-${fileName}-en.md`);
+    write(results,`./docs/en/0${index}-${fileName}.md`);
   });
 }
 
-urls.forEach(function(item,i) {
-  parser(item,i);
-});
+for (const [index, item] of urls.entries()) {
+  // log(`index, item =`, index, item);
+  parser(item, index);
+}
+
+// urls.forEach(function(item, i) {
+//   setTimeout(() => {
+//     parser(item, i);
+//   }, i * 1000 + 1000);
+// });
