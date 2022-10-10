@@ -4,6 +4,8 @@
   "description": "How-HTTPS-Works-Chinese / HTTPS 的工作原理 (中文版）",
   "main": "index.js",
   "scripts": {
+    "start": "npm run rmrf && node index.js",
+    "rmrf": "rimraf ./en/*.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,12 @@
   ],
   "author": "xgqfrms",
   "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "json2md": "^2.0.0",
+    "needle": "^3.1.0",
+    "rimraf": "^3.0.2"
+  },
   "bugs": {
     "url": "https://github.com/xgqfrms/How-HTTPS-Works-Chinese/issues"
   },

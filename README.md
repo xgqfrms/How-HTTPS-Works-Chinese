@@ -32,3 +32,42 @@ www.cnblogs.com 发布文章使用：只允许注册用户才可以访问！
 
 -->
 
+<!--
+
+json2md, A JSON to Markdown converter.
+JSON 到 Markdown 转换器。
+https://www.npmjs.com/package/json2md
+
+needle, The leanest and most handsome HTTP client in the Nodelands.
+Nodelands 中最精简、最漂亮的 HTTP 客户端。
+https://www.npmjs.com/package/needle
+
+cheerio, Fast, flexible & lean implementation of core jQuery designed specifically for the server.
+专为服务器设计的核心 jQuery 的快速、灵活和精简的实现。
+https://www.npmjs.com/package/cheerio
+
+
+Linux rm -rf
+https://www.npmjs.com/package/rimraf
+
+
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "json2md": "^1.6.3",
+    "needle": "^2.2.4",
+    "rimraf": "^3.0.2"
+  }, ✅
+
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "json2md": "^2.0.0",
+    "needle": "^3.1.0",
+    "rimraf": "^3.0.2"
+  }, ❌ 手动创建 en 文件夹
+  // Error: ENOENT: no such file or directory, open './docs/en/7-quiz.md'
+
+npm i cheerio json2md needle rimraf
+
+yarn add cheerio json2md needle rimraf
+
+ -->
