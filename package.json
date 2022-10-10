@@ -1,0 +1,29 @@
+{
+  "name": "how-https-works-chinese",
+  "version": "1.0.0",
+  "description": "How-HTTPS-Works-Chinese / HTTPS 的工作原理 (中文版）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/How-HTTPS-Works-Chinese.git"
+  },
+  "keywords": [
+    "HTTPS",
+    "HTTP",
+    "TLS",
+    "SSL",
+    "SSH",
+    "How HTTPS Works Chinese",
+    "HTTPS 的工作原理 (中文版）",
+    "xgqfrms"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/How-HTTPS-Works-Chinese/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/How-HTTPS-Works-Chinese#readme"
+}
