@@ -75,3 +75,51 @@ npm i cheerio json2md needle rimraf
 yarn add cheerio json2md needle rimraf
 
  -->
+
+<!--
+
+https://howhttps.works/why-do-we-need-https/
+
+??? 翻译疑问
+
+Certiﬁcat / Compugter / Browserbird
+
+证书 猫🐱 / 计算机 狗🐶 / 浏览器 鸟🐦
+
+
+"没有文字"
+
+""
+
+布兰妮·斯皮尔斯
+Britney Spears
+
+Britney Spears - ...Baby One More Time (Official Video) 756,762,200次观看 2009年10月25日
+布兰妮斯皮尔斯 - ...宝贝再来一次（官方视频） 756,762,200次观看 2009年10月25日
+
+https://www.youtube.com/watch?v=C-u5WLJ9Yk4&ab_channel=BritneySpearsVEVO
+
+https://britneyspears.lnk.to/listenYD
+
+Fur-ever
+皮草永远
+
+https://www.youtube.com/watch?v=ecZTkiEYP1o&ab_channel=NickelodeonCartoonUniverse
+
+https://fur-ever-home.org/
+
+https://www.definitions.net/definition/furever
+
+Furever
+弗雷弗
+
+Fur-ever === forever 永远 ✅
+
+https://ell.stackexchange.com/questions/324769/whats-the-fur-ever-meanings-in-english
+
+
+我好像突然理解了，`Fur-ever` 就是表示一些类似狗猫的小动物是人类永远的朋友。
+
+I seem to suddenly understand that `Fur-ever` means that some small animals like dogs and cats are the eternal friends of human beings.
+
+ -->

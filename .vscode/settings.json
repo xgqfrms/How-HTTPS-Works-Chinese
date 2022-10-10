@@ -75,5 +75,8 @@
     "html.format.extraLiners": "",
     "html.format.enable": false,
     "html.format.contentUnformatted": "body, div, section, script, pre,code,textarea",
+    "editor.unicodeHighlight.allowedLocales": {
+      "zh-hans": true
+    },
 
 }
